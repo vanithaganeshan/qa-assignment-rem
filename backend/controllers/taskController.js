@@ -35,7 +35,9 @@ const addTask = async (req, res) => {
     newTask.save()
         .then(() => {
             sendMail(user[0].email, "Task Added", title, description)
-            return (res.status(200).json({ message: "Task added successfully" }))
+            return (res.status(200).json({ message: "Task added successfully",
+                id:newTask._id
+             }))
         })
         .catch((error) => {
             return (
