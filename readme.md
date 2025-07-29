@@ -36,20 +36,24 @@ Or run headless:
 npx cypress run
 
 API Testing
-Postman collections for API tests are included in the postman folder.
+-------------
+Postman collections for API tests are included in the postman folder and
+Postman Environment variables are included in the postman folder as .json ext
 
-Import collections into Postman and run the tests against the appropriate environment.
+Import collections and environemnts into Postman and run the tests against the appropriate environment.
+Import them in Postman and run using Collection Runner or Newman.
+
+
 
 Project Structure
 /cypress - Cypress test scripts for UI automation.
 
 /postman - Postman collections for API testing.
 
-/manual-test-cases - Documentation for manual testing scenarios.
-
 Other project files as required.
 
 Tools & Technologies
+--------------------
 Cypress for UI Automation Testing
 
 Postman for API Testing
